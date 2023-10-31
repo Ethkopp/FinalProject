@@ -2,10 +2,11 @@ extends CharacterBody2D
 
 var player = null
 @onready var ray = $See
-@export var speed = 1000
-@export var looking_speed = 200
+@export var speed = 800
+@export var looking_speed = 100
 var line_of_sight = false
 var nav_ready = false
+var #intial postion = Vector2.ZERO
 
 var mode = ""
 
@@ -14,8 +15,9 @@ var points = []
 const margin = 1.5
 
 func _ready():
-	$AnimatedSprite2D.play("move")
+	$AnimatedSprite2D.play("Moving")
 	call_deferred("nav_setup")
+	initial_postion = global_postion 
 
 func nav_setup():
 	# Wait for the first physics frame so the NavigationServer can sync.
@@ -31,6 +33,7 @@ func _physics_process(_delta):
 		$See.target_position = to_local(player.global_position)
 		var c = $See.get_collider()
 		var s = looking_speed
+		var points = intial_position
 		if c == player:
 			s = speed
 		var distance = player.global_position - global_position
