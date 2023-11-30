@@ -1,28 +1,29 @@
-# Exercise 4.4-Enemies
+# Project Name
+MSCH-C220 Game Jam, November 2023
 
-Exercise for MSCH-C220
+## Theme
+We interpreted the theme "inside out" by making a 2D Platformer that requires you to traverse out of a cave
 
-An exercise for the 2D Platformer project, exploring attacking and three different enemy types.
+## Game Play
+
+The objective is to make it to the cave exit and evade all mobs.
+
+Game-play instructions
+
+Press W to jump and A and D control side movement
+
+## Impediments
+Had certain struggles implementing features like portals.
 
 ## Implementation
+The player sprite is from [MV Platformer Male](https://opengameart.org/content/mv-platformer-male-32x64) by MoikMellah. CC0 Licensed.
 
-Built using Godot 4.1.1
+The [tilemap](https://kenney.nl/assets/abstract-platformer) is from Kenney.nl.
 
-The player sprite is an adaptation of [MV Platformer Male](https://opengameart.org/content/mv-platformer-male-32x64) by MoikMellah. CC0 Licensed.
-
-The [tilemap](https://kenney.nl/assets/abstract-platformer) is provided by Kenney.nl.
-
-The enemies are from the [Medieval Fantasy Character Pack by OcO](https://oco.itch.io/medieval-fantasy-character-pack). CC0 Licensed
 
 ## References
 
-None
-
 ## Future Development
 
-None
-
-## Created by 
-
-Max Morrow
-
+# Created by: Godot Gremlins
+Ethan Kopp, Max Morrow, Nick Victor
