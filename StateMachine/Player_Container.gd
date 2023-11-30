@@ -9,3 +9,6 @@ func _physics_process(_delta):
 		var player = Player.instantiate()
 		player.position = starting_position
 		add_child(player)
+
+
+
