@@ -6,7 +6,7 @@ var player = null
 @export var looking_speed = 100
 var line_of_sight = false
 var nav_ready = false
-var #intial postion = Vector2.ZERO
+var intial postion = Vector2.ZERO:
 
 var mode = ""
 
